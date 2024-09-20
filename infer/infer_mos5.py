@@ -5,6 +5,10 @@ import argparse
 import yaml
 import torch
 
+#colab implementation
+# lets add the local path for the audioldm_train library
+sys.path.append('/content/qa-mdt')
+
 from audioldm_train.utilities.data.dataset_original_mos5 import AudioDataset as AudioDataset
 
 from torch.utils.data import DataLoader
