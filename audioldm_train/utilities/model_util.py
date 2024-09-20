@@ -19,7 +19,7 @@ from queue import Queue
 from inspect import isfunction
 from PIL import Image, ImageDraw, ImageFont
 import json
-with open('offset_pretrained_checkpoints.json', 'r') as config_file:
+with open('/content/qa-mdt/offset_pretrained_checkpoints.json', 'r') as config_file:
     config_data = json.load(config_file)
 
 def log_txt_as_img(wh, xc, size=10):
